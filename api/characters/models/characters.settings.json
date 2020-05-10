@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "characters",
+  "info": {
+    "name": "characters"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "role": {
+      "type": "string"
+    },
+    "alliance": {
+      "type": "string"
+    },
+    "species": {
+      "type": "string"
+    },
+    "gender": {
+      "type": "string"
+    },
+    "height": {
+      "type": "decimal"
+    },
+    "weapon": {
+      "type": "string"
+    },
+    "homeworld": {
+      "type": "string"
+    },
+    "bio": {
+      "type": "text"
+    },
+    "image": {
+      "type": "string"
+    },
+    "users": {
+      "via": "characters",
+      "plugin": "users-permissions",
+      "collection": "user"
+    }
+  }
+}
